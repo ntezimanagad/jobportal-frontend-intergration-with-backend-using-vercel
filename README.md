@@ -1,12 +1,32 @@
-# React + Vite
+DevOps Job Portal System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Job Portal system built with React (frontend) and Spring Boot (backend), fully integrated with CI/CD pipelines using GitHub Actions, deployed on Render (backend) and Vercel (frontend).
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- User Registration with OTP Verification
+- JWT Authentication & Role-Based Access (Applicant, Company, Admin)
+- CI/CD Auto-deployment using GitHub Actions
+- Backend: Spring Boot + PostgreSQL (Render.com), (https://spring-boot-jobportal-system-devops-2.onrender.com)
+- Frontend: React.js (Vercel) (https://jobportal-frontend-intergration-wit.vercel.app)
+- Docker-ready (optional)
+
+
+Tech Stack
+
+- Frontend: React.js, Axios, React Router
+- Backend: Spring Boot, Spring Security, PostgreSQL
+- CI/CD: GitHub Actions
+- Hosting: Render (backend), Vercel (frontend)
+
+
+CI/CD Pipeline
+
+- Every push to `main` triggers deployment:
+  - Builds & tests Spring Boot backend
+  - Sends deploy hook to Render for backend redeploy
+  - Vercel automatically redeploys frontend
+
+
