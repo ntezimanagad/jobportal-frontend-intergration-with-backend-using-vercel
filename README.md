@@ -2,6 +2,8 @@ DevOps Job Portal System
 
 A full-stack Job Portal system built with React (frontend) and Spring Boot (backend), fully integrated with CI/CD pipelines using GitHub Actions, deployed on Render (backend) and Vercel (frontend).
 
+this system is basic am still working on it making sure frontend receive well backend error and success message 
+
 
 
 Features
@@ -11,7 +13,7 @@ Features
 - CI/CD Auto-deployment using GitHub Actions
 - Backend: Spring Boot + PostgreSQL (Render.com), (https://spring-boot-jobportal-system-devops-2.onrender.com)
 - Frontend: React.js (Vercel) (https://jobportal-frontend-intergration-wit.vercel.app)
-- Docker-ready (optional)
+- Docker-ready
 
 
 Tech Stack
